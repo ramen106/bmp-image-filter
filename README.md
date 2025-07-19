@@ -39,6 +39,8 @@ g++ src/main.cpp src/filters.cpp -Iinclude -o filter
 ./filter
 ```
 
+---
+
 ## Concepts Demonstrated
 1. Manual parsing of BMP headers & pixel data
 
@@ -50,6 +52,8 @@ g++ src/main.cpp src/filters.cpp -Iinclude -o filter
 
 5. Structs, vectors, and clean namespace usage in C++
 
+---
+
 ## Sample Use
 When the program runs, it prompts you to
 
@@ -59,6 +63,33 @@ When the program runs, it prompts you to
 
 3. It saves the new image as: grayscaled_input.bmp, blurred_input.bmp, etc.
 
+---
+
+## Sample Output
+
+### Original:
+![original](images/IMG_1070.bmp)
+
+### Grayscaled:
+![grayscale](images/grayscaled_IMG_1070.bmp)
+
+### Blurred:
+![blurred](images/blurred_IMG_1070.bmp)
+
+### Reflected:
+![reflected](images/reflected_IMG_1070.bmp)
+
+### Edge Detection:
+![original](images/image.bmp)
+![edges](images/edges_image.bmp)
+
+---
+
+## Known Issues
+1. Program fails to apply filters to images not in parent directory even if given correct path
+2. It also seems to not be able to open images that weren't present before the program was ran
+
+---
 ## Possible improvements
 
 - I hope to add more features in the future:
