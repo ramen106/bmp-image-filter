@@ -21,19 +21,6 @@ I decided to build everything from scratch (as much as possible, online help was
 
 ---
 
-## Project Structure
-bmp-image-filter/
-├── src/
-│ ├── main.cpp -> CLI & BMP file handling
-│ └── filters.cpp -> Filter logic (grayscale, blur, edges, reflect)
-├── include/
-│ ├── prototypes.h -> Filter function declarations & helpers
-│ └── bmp_types.h  -> Custom BMP structs (RGBTRIPLE, headers, etc.)
-├── .gitignore
-├── README.md
-
----
-
 ## Build Instructions
 
 ### On Windows (with MSVC)
