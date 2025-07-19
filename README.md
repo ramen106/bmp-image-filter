@@ -76,7 +76,8 @@ Files are showcased in .jpg despite the program interacting only with .bmp files
 ![grayscale](images/grayscaled_IMG_1070.jpg)
 
 ### Blurred:
-![blurred](images/blurred_IMG_1070.jpg)
+![original](images/blursample.jpg)
+![blurred](images/blurred_blursample.jpg)
 
 ### Reflected:
 ![reflected](images/reflected_IMG_1070.jpg)
