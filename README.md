@@ -67,21 +67,23 @@ When the program runs, it prompts you to
 
 ## Sample Output
 
+Files are showcased in .jpg despite the program interacting only with .bmp files simply because they're smaller size to upload
+
 ### Original:
-![original](images/IMG_1070.bmp)
+![original](images/IMG_1070.jpg)
 
 ### Grayscaled:
-![grayscale](images/grayscaled_IMG_1070.bmp)
+![grayscale](images/grayscaled_IMG_1070.jpg)
 
 ### Blurred:
-![blurred](images/blurred_IMG_1070.bmp)
+![blurred](images/blurred_IMG_1070.jpg)
 
 ### Reflected:
-![reflected](images/reflected_IMG_1070.bmp)
+![reflected](images/reflected_IMG_1070.jpg)
 
 ### Edge Detection:
-![original](images/image.bmp)
-![edges](images/edges_image.bmp)
+![original](images/image.jpg)
+![edges](images/edges_image.jpg)
 
 ---
 
