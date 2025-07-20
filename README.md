@@ -17,7 +17,7 @@ I decided to build everything from scratch (as much as possible, online help was
 
 - Reflect (horizontal mirror)
 
-- Easy to extend — filters live in a modular `ImageFilters` namespace
+- Easy to extend : filters live in a modular `ImageFilters` namespace
 
 ---
 
@@ -29,13 +29,13 @@ I decided to build everything from scratch (as much as possible, online help was
 2. Run:
 
 ```bash
-cl src\main.cpp src\filters.cpp /I include /W4 /EHsc /Fe:filter.exe
+cl src\main.cpp src\filter.cpp /I include /W4 /EHsc /Fe:filter.exe
 ```
 3. Then run the program.
 
 ### On Linux / WSL / MinGW
 ```bash
-g++ src/main.cpp src/filters.cpp -Iinclude -o filter
+g++ src/main.cpp src/filter.cpp -Iinclude -o filter
 ./filter
 ```
 
