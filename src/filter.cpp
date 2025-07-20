@@ -165,6 +165,9 @@ std::vector<std::vector<RGBTRIPLE>> ImageFilters::edges(int height, int width, s
 
 std::vector<std::vector<RGBTRIPLE>> ImageFilters::blur(int height, int width, std::vector<std::vector<RGBTRIPLE>>& image)
 {
+    // Perform blur on a copy of the image rather than in-place to avoid un-even blur 
+
+    std::vector<std::vector<RGBTRIPLE>> result = image;
     for (int i = 1; i < height-1; i++)
     {
         for (int j = 0; j < width-1; j++)
@@ -190,9 +193,9 @@ std::vector<std::vector<RGBTRIPLE>> ImageFilters::blur(int height, int width, st
                         continue;
                     }
 
-                    redSum += image[ni][nj].rgbtRed;
-                    greenSum += image[ni][nj].rgbtGreen;
-                    blueSum += image[ni][nj].rgbtBlue;
+                    redSum += result[ni][nj].rgbtRed;
+                    greenSum += result[ni][nj].rgbtGreen;
+                    blueSum += result[ni][nj].rgbtBlue;
                     count++;
                 }
             }
@@ -201,12 +204,12 @@ std::vector<std::vector<RGBTRIPLE>> ImageFilters::blur(int height, int width, st
             BYTE redBlurVal = BYTE(redSum / count);
             BYTE greenBlurVal = BYTE(greenSum / count);
             BYTE blueBlurVal = BYTE(blueSum / count); 
-            image[i][j].rgbtRed = redBlurVal;
-            image[i][j].rgbtGreen = greenBlurVal;
-            image[i][j].rgbtBlue = blueBlurVal;
+            result[i][j].rgbtRed = redBlurVal;
+            result[i][j].rgbtGreen = greenBlurVal;
+            result[i][j].rgbtBlue = blueBlurVal;
         }
     }
-    return image;
+    return result;
 }
 
 void makeFile(std::ofstream& output, std::vector<std::vector<RGBTRIPLE>> filteredImage, LONG biWidth, LONG biHeight)

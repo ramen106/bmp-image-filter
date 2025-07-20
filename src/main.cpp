@@ -118,8 +118,14 @@ int main ()
         switch (filter[0])
         { 
             case 'b':
-                filteredImage = ImageFilters::blur(actualHeight, actualWidth, image);
+                filteredImage = image;
 
+                // Perform multiple passes to increase blur intensity
+                
+                for(int i = 0; i < 3; i++)
+                {
+                filteredImage = ImageFilters::blur(actualHeight, actualWidth, filteredImage);
+                }
                 break;
 
             case 'g':
