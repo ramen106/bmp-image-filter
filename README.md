@@ -98,6 +98,7 @@ Note that the files are showcased in .jpg despite the program interacting only w
 ## Known Issues
 1. Program fails to apply filters to images not in parent directory even if given correct path
 2. It also seems to not be able to open images that weren't present before the program was ran
+3. Instead of outputting the intended error message when inputting an invalid file, it proceeds to ask for which filter then crashes
 
 ---
 ## Possible improvements
