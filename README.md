@@ -65,9 +65,16 @@ When the program runs, it prompts you to
 
 ---
 
+
+## 🎬 Demo
+
+▶️ [Watch the demo](demo/demovid.mp4)
+
+---
+
 ## Sample Output
 
-Files are showcased in .jpg despite the program interacting only with .bmp files simply because they're smaller size to upload
+Note that the files are showcased in .jpg despite the program interacting only with .bmp files simply because they're smaller size to upload
 
 ### Original:
 ![original](images/IMG_1070.jpg)
@@ -101,7 +108,7 @@ Files are showcased in .jpg despite the program interacting only with .bmp files
     3. Improve performance as I feel right now it's slower and hogs more memory than it needs to.
     4. Expand image format support
 
-- But I suppose for now it's finished, and I can come back to it when I improve my skills.
+- But for now it's finished, and I can come back to it when I improve my skills.
 
 
 ## License
