@@ -68,7 +68,7 @@ When the program runs, it prompts you to
 
 ## 🎬 Demo
 
-▶️ [Watch the demo](demo/demovid.mp4)
+▶️ [![Watch the demo](https://img.youtube.com/vi/7XMoeF8ABnY/hqdefault.jpg)](https://youtu.be/7XMoeF8ABnY)
 
 ---
 
